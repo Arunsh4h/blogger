@@ -1,12 +1,12 @@
 ---
 postFormat: 'standard'
 title: 'Real-world applications of smart contracts and blockchain technology'
-featureImg: '/images/posts/post-seo-list-06.webp'
+featureImg: '/images/post-single/blockchain/blockchain-dp.webp'
 slidePost: true
 date: 'Mar 30 2023'
 pCate: 'Tech Blog'
 cate: 'Blockchain'
-cate_img: '/images/posts/category/design.webp'
+cate_img: '/images/posts/category/research.webp'
 post_views: '600K Views'
 read_time: '3 min read'
 author_name: 'Rose Mary'
@@ -41,7 +41,7 @@ tags:
 
 **A smart contract is a self-executing agreement with the terms of the contract directly written into code, while blockchain technology is a decentralized ledger that enables secure and transparent record-keeping.**
 
-![Post Images](/images/post-single/post-single-02.webp)
+![Post Images](/images/post-single/blockchain/blockchain2.webp)
 *"Transforming the landscape of transactions with the mighty power of smart contracts and blockchain technology - Smart contracts, my dear colleagues, are sophisticated agreements that automate the execution of contract terms by embodying them in code. Conversely, blockchain technology is a decentralized digital ledger that ensures robust security and lucid record-keeping, sans any central authority."*
 
 Smart contracts and blockchain technology have gained significant attention in recent years for their potential to disrupt various industries and streamline processes. In this blog, we will explore the real-world applications of smart contracts and blockchain technology, and how they are being utilized to address challenges in various industries, from supply chain management to healthcare. By examining these use cases, we can gain a better understanding of the potential impact of this technology on the future.
@@ -52,7 +52,7 @@ Digital identity management is another area where smart contracts and blockchain
 
 The use of smart contracts in digital identity management can also simplify and secure transactions by verifying the identity of both parties involved. This can help to prevent fraudulent activity and reduce the risk of identity theft. Additionally, by using decentralized identity verification, individuals can be confident that their personal information is protected from cyber attacks and data breaches.
 
-![Post Images](/images/post-single/post-single-03.webp)
+![Post Images](/images/post-single/blockchain/blockchain3.webp)
 
 Digital identity management is an area where smart contracts and blockchain technology have the potential to revolutionize the way in which personal information is stored and managed. By providing secure and decentralized identity verification, individuals can regain control over their personal information and improve the security of online transactions.
 
@@ -72,7 +72,7 @@ In addition, decentralized identity verification can also help organizations to 
 
 Smart contracts can be used to automate the payment processing process, making it faster, more efficient, and less prone to errors. By eliminating the need for intermediaries such as banks and payment processors, the use of smart contracts can reduce the cost of payment processing and increase the speed of transactions.*Additionally, blockchain technology provides a secure and transparent ledger of transactions, reducing the risk of fraud and errors.*
 
-![Post Images](/images/post-single/post-single-04.webp)
+![Post Images](/images/post-single/blockchain/blockchain4.webp)
 
 *In addition, the use of smart contracts and blockchain technology in payment processing can also have important implications for individuals and businesses. For example, it can enable the creation of decentralized payment networks that can operate without intermediaries and without the need for traditional financial institutions.* This can provide individuals and businesses with greater control over their finances and increase financial inclusion by providing access to financial services to those who were previously unbanked.
 
@@ -83,7 +83,7 @@ Smart contracts can be used to automate the payment processing process, making i
 
 ## Property management
 Property management is another area where smart contracts and blockchain technology are having a significant impact. *The traditional property management system is often bogged down by complex processes, limited transparency, and the need for intermediaries. By using blockchain technology, property management can be made more efficient, secure, and transparent.*
-
+![Post Images](/images/post-single/blockchain/blockchain1.webp)
 Smart contracts can be used to automate various processes in property management, such as rental agreements, lease renewals, and payment processing. By eliminating the need for intermediaries, [smart contracts](#) can streamline the property management process and reduce the time and cost associated with managing properties. Additionally, blockchain technology provides a secure and transparent ledger of transactions, reducing the risk of fraud and errors.
 
 In addition, the use of smart contracts and blockchain technology in property management can also have important implications for real estate professionals and property owners. For example, it can provide a more efficient way of tracking property ownership and transfer of ownership, reducing the need for intermediaries and increasing transparency. This can also improve the accuracy of property records and reduce the risk of disputes.
