@@ -9,10 +9,10 @@ cate: 'Technology'
 cate_img: '/images/posts/category/technology.webp'
 post_views: '400K Views'
 read_time: '5 min read'
-author_name: 'Nikita Allen'
+author_name: 'Sara Flower'
 author_img: '/images/posts/author/author-b3.webp'
 author_designation: 'Software Developer'
-author_bio: 'Nikita Allen is a software developer with over 10 years of experience in developing innovative and scalable software solutions. He is passionate about exploring new technologies and their impact on the industry.'
+author_bio: 'Sara Flower is a software developer with over 10 years of experience in developing innovative and scalable software solutions. He is passionate about exploring new technologies and their impact on the industry.'
 author_social:
     -
         icon: fab fa-facebook-f
