@@ -139,8 +139,8 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                       <a>
                         <Image
                           className="dark-logo"
-                          width={141}
-                          height={37}
+                          width={145.23}
+                          height={50.69}
                           src={
                             (colorMode === "Dark"
                               ? lightLogo || "/images/logo/logo-white2.webp"
