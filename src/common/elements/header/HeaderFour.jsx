@@ -78,9 +78,6 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                 </div>
               </div>
               <div className="logsor">
-                <Link href="/">
-                  <a className="logo">NextAuth.js</a>
-                </Link>
                 {session && (
                   <a href="#" onClick={handleSignout} className="btn-signin">
                     Sign out
