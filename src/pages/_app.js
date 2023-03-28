@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/style.scss";
 import ColorSwitcher from "../common/elements/color-switcher/ColorSwitcher";
-import { SessionProvider } from "next-auth/client";
+import { SessionProvider } from "next-auth/react";
 
 function MyApp({ Component, pageProps }) {
   return (
