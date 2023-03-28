@@ -10,6 +10,7 @@ const nextConfig = {
     NEXTAUTH_URL: process.env.NEXTAUTH_URL || "https://www.intself.com",
     GOOGLE_ID: process.env.GOOGLE_CLIENT_ID,
     GOOGLE_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
   },
 };
 
