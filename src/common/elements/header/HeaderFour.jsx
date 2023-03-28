@@ -77,20 +77,32 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                   </ul>
                 </div>
               </div>
-              <div className="logsor">
-                {session && (
-                  <a href="#" onClick={handleSignout} className="btn-signin">
-                    Sign out
-                  </a>
-                )}
-                {!session && (
-                  <a href="#" onClick={handleSignin} className="btn-signin">
-                    Sign in
-                  </a>
-                )}
-              </div>
+
               <div className="col-lg-6 col-md-4 col-sm-12">
                 <ul className="social-share-transparent md-size justify-content-center justify-content-md-end">
+                  <li>
+                    <div className="logsor">
+                      {session && (
+                        <a
+                          href="#"
+                          onClick={handleSignout}
+                          className="btn-signin"
+                        >
+                          Sign out
+                        </a>
+                      )}
+                      {!session && (
+                        <a
+                          href="#"
+                          onClick={handleSignin}
+                          className="btn-signin"
+                        >
+                          Sign in
+                        </a>
+                      )}
+                    </div>
+                  </li>
+
                   <li>
                     <a href={SocialData.fb.url}>
                       <i className={SocialData.fb.icon} />
