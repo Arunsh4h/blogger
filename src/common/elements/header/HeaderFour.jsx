@@ -5,6 +5,8 @@ import MobileMenu from "./MobileMenu";
 import Nav from "./Nav";
 import SocialData from "../../../data/social/SocialData.json";
 
+import { useSession, signIn, signOut } from "next-auth/react";
+
 const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
   const dateFormate = () => {
     var day = new Date().getDate();
@@ -27,9 +29,19 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
 
   const [togglaClass, setTogglaClass] = useState(false);
 
-   const toggleHandler = () => {
-        setTogglaClass(active => !active);
-   }
+  const toggleHandler = () => {
+    setTogglaClass((active) => !active);
+  };
+  const { data: session } = useSession();
+  const handleSignin = (e) => {
+    e.preventDefault();
+    signIn();
+  };
+
+  const handleSignout = (e) => {
+    e.preventDefault();
+    signOut();
+  };
 
   return (
     <>
@@ -65,6 +77,21 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                   </ul>
                 </div>
               </div>
+              <div className="logsor">
+                <Link href="/">
+                  <a className="logo">NextAuth.js</a>
+                </Link>
+                {session && (
+                  <a href="#" onClick={handleSignout} className="btn-signin">
+                    Sign out
+                  </a>
+                )}
+                {!session && (
+                  <a href="#" onClick={handleSignin} className="btn-signin">
+                    Sign in
+                  </a>
+                )}
+              </div>
               <div className="col-lg-6 col-md-4 col-sm-12">
                 <ul className="social-share-transparent md-size justify-content-center justify-content-md-end">
                   <li>
@@ -97,27 +124,32 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
           <div className="container">
             <div className="row justify-content-between align-items-center">
               <div className="col-xl-8 col-lg-4 col-md-4 col-12">
-				<div className="wrapper d-block d-sm-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
-					<div className="logo">
-						<Link href="/">
-							<a>
-								<Image
-								className="dark-logo"
-								width={141}
-								height={37}
-								src={(colorMode === "Dark" ? lightLogo || "/images/logo/logo-white2.webp" : darkLogo || "/images/logo/logo-black.webp") || "/images/logo/logo-black.webp" }
-								alt="Blogar logo"
-								/>
-							</a>
-						</Link>
-					</div>
+                <div className="wrapper d-block d-sm-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+                  <div className="logo">
+                    <Link href="/">
+                      <a>
+                        <Image
+                          className="dark-logo"
+                          width={141}
+                          height={37}
+                          src={
+                            (colorMode === "Dark"
+                              ? lightLogo || "/images/logo/logo-white2.webp"
+                              : darkLogo || "/images/logo/logo-black.webp") ||
+                            "/images/logo/logo-black.webp"
+                          }
+                          alt="Blogar logo"
+                        />
+                      </a>
+                    </Link>
+                  </div>
 
-					<div className="mainmenu-wrapper d-none d-xl-block">
-					<nav className="mainmenu-nav">
-          <Nav posts={postData}/>
-					</nav>
-					</div>
-				</div>
+                  <div className="mainmenu-wrapper d-none d-xl-block">
+                    <nav className="mainmenu-nav">
+                      <Nav posts={postData} />
+                    </nav>
+                  </div>
+                </div>
               </div>
               <div className="col-xl-4 col-lg-8 col-md-8 col-12">
                 <div className="header-search d-flex flex-wrap align-items-center justify-content-center justify-content-xl-end">
@@ -134,10 +166,17 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                     </div>
                   </form>
                   <div className="mobile-search-wrapper d-sm-none d-block">
-                    <button className="search-button-toggle" onClick={toggleHandler}>
+                    <button
+                      className="search-button-toggle"
+                      onClick={toggleHandler}
+                    >
                       <i className="fal fa-search" />
                     </button>
-                    <form className={`header-search-form ${togglaClass ? "open": ""}`}>
+                    <form
+                      className={`header-search-form ${
+                        togglaClass ? "open" : ""
+                      }`}
+                    >
                       <div className="axil-search form-group">
                         <button type="submit" className="search-button">
                           <i className="fal fa-search" />
