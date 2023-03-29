@@ -44,25 +44,25 @@ function SearchPage() {
   };
 
   return (
-    <div className="App">
-      <div id="od">
+    <div className="Clostr">
+      <div id="Clostry">
         <h1>Open Directory Search Portal</h1>
         <p>Research, Discover & Archive!</p>
         <form onSubmit={handleFormSubmit}>
           <div id="search-bar">
             <div id="dropdown">
               <select value={selectedOption} onChange={handleOptionChange}>
-                <option value="Video">✅ Video</option>
-                <option value="Audio">✅ Audio</option>
-                <option value="Ebook">✅ Ebook</option>
-                <option value="Pictures">✅ Pictures</option>
-                <option value="Software/Games">✅ Software/Games</option>
-                <option value="Compressed">✅ Compressed</option>
+                <option value="Video">Video</option>
+                <option value="Audio">Audio</option>
+                <option value="Ebook">Ebook</option>
+                <option value="Pictures">Pictures</option>
+                <option value="Software/Games">Software/Games</option>
+                <option value="Compressed">Compressed</option>
               </select>
             </div>
             <input
               id="search-box"
-              placeholder="Search here for Movies, Audio, Ebooks, Picture and Games"
+              placeholder="Search here ..."
               autoFocus
               value={searchTerm}
               onChange={handleInputChange}
