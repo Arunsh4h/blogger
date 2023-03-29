@@ -245,13 +245,13 @@ const Nav = ({ posts }) => {
           </li>
         </ul>
       </li>
-      {/* <li className="menu-item-has-children">
+      <li className="menu-item-has-children">
         <Link href="/">
           <a>Pages</a>
         </Link>
         <ul className="axil-submenu">
           <li>
-            <Link href="/post-list">
+            <Link href="/post-listy">
               <a className="hover-flip-item-wrapper">
                 <span className="hover-flip-item">
                   <span data-text="Post List">Post List</span>
@@ -259,7 +259,7 @@ const Nav = ({ posts }) => {
               </a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/category/design">
               <a className="hover-flip-item-wrapper">
                 <span className="hover-flip-item">
@@ -321,9 +321,9 @@ const Nav = ({ posts }) => {
                 </span>
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
-      </li> */}
+      </li>
       <li>
         <Link href="/lifestyle-blog">
           <a>Lifestyle</a>
