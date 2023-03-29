@@ -48,7 +48,7 @@ function SearchPage() {
       <div id="Clostry">
         <h1>Search portal for the Open Directory</h1>
 
-        <div class="boxyt">
+        <div classname="boxyt">
           <span id="letter1">Research, Discover & Archive with </span>
 
           <span id="letter1">A</span>
