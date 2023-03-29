@@ -51,7 +51,7 @@ function SearchPage() {
         <div className="boxyt">
           <span id="letter1">Research, Discover & Archive with </span>
 
-          <span id="letter1">A</span>
+          {/* <span id="letter1">A</span>
           <span id="letter2">R</span>
           <span id="letter3">U</span>
           <span id="letter4">N</span>
@@ -59,7 +59,7 @@ function SearchPage() {
           <span id="letter1">S</span>
           <span id="letter2">H</span>
           <span id="letter3">A</span>
-          <span id="letter4">H</span>
+          <span id="letter4">H</span> */}
         </div>
 
         <form onSubmit={handleFormSubmit}>
