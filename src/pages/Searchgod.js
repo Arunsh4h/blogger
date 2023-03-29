@@ -47,21 +47,21 @@ function SearchPage() {
     <div className="Clostr">
       <div id="Clostry">
         <h1>Search portal for the Open Directory</h1>
-        <div className="forg">
-          {/* <div class="boxyt">
-            <span id="letter1">Research, Discover & Archive with </span>
 
-            <span id="letter1">A</span>
-            <span id="letter2">R</span>
-            <span id="letter3">U</span>
-            <span id="letter4">N</span>
-            <span id="letter4">-</span>
-            <span id="letter1">S</span>
-            <span id="letter2">H</span>
-            <span id="letter3">A</span>
-            <span id="letter4">H</span>
-          </div> */}
+        <div class="boxyt">
+          <span id="letter1">Research, Discover & Archive with </span>
+
+          <span id="letter1">A</span>
+          <span id="letter2">R</span>
+          <span id="letter3">U</span>
+          <span id="letter4">N</span>
+          <span id="letter4">-</span>
+          <span id="letter1">S</span>
+          <span id="letter2">H</span>
+          <span id="letter3">A</span>
+          <span id="letter4">H</span>
         </div>
+
         <form onSubmit={handleFormSubmit}>
           <div className="gripy">
             <div id="search-bar">
