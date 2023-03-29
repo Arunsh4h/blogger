@@ -37,10 +37,13 @@ select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid var(--color-border);
+    border: 3px solid var(--color-border);
     border-radius: 4px;
-    background: url(/images/icons/arrow-icon.png) 95% center no-repeat transparent;
+    background: url(/images/icons/arrow-icon.webp) 95% center no-repeat #fbb810;
     padding-right: 32px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
 }
 
 
@@ -261,7 +264,7 @@ input[type="radio"] {
 
 input[type="submit"] {
     width: auto;
-    padding: 0 30px;
+    padding: 0 60px;
     border-radius: 500px;
     display: inline-block;
     font-weight: 500;
