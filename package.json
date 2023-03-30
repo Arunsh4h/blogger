@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "bootstrap": "^5.2.3",
+    "firebase": "^9.18.0",
     "framer-motion": "^6.5.1",
     "fs": "^0.0.1-security",
     "get-google-fonts": "^1.2.2",
