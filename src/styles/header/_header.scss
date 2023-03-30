@@ -312,6 +312,7 @@ button {
     Header Style Three  
 ---------------------------*/
 .header-top {
+    
     background: var(--color-lightest);
     .header-top-nav{
         li {
@@ -321,7 +322,8 @@ button {
             }
            
             a {
-                color: #878787;
+                color: #ffffff;
+               
                 font-size: 14px;
                 line-height: 22px;
                 display: inline-block;
@@ -340,7 +342,9 @@ button {
                 margin-bottom: 0;
             }
             a {
-                color: #878787;
+                color: white;
+               
+               
                 font-size: 14px;
                 line-height: 22px;
                 display: inline-block;
@@ -385,7 +389,7 @@ button {
                         margin: 0 5px;
                     }
                     a {
-                        color: #878787;
+                        color: #ffffff;
                         font-size: 14px;
                         line-height: 22px;
                         display: inline-block;
@@ -489,7 +493,10 @@ button {
         padding: 0;
 
         .header-top {
-            background: var(--color-lightest);
+            background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+            background-size: 200% 100%;
+            animation: gradient 6s linear infinite;
+            animation-direction: alternate;
             @media #{$sm-layout} {
                 padding: 10px 0;
                 padding-bottom: 20px;
