@@ -222,7 +222,10 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                           <Image
                             width={40}
                             height={40}
-                            src="/images/others/author.webp"
+                            src={
+                              session?.user?.image ||
+                              "/images/others/author.webp"
+                            }
                             alt="Author Images"
                           />
                         </a>
