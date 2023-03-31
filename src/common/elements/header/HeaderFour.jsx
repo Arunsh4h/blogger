@@ -83,13 +83,16 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                   <li>
                     <div className="logsor">
                       {session && (
-                        <a
-                          href="#"
-                          onClick={handleSignout}
-                          className="btn-signin"
-                        >
-                          Sign out
-                        </a>
+                        <div>
+                          <span>Welcome, {session.user.name}</span>
+                          <a
+                            href="#"
+                            onClick={handleSignout}
+                            className="btn-signin"
+                          >
+                            Sign out
+                          </a>
+                        </div>
                       )}
                       {!session && (
                         <a
