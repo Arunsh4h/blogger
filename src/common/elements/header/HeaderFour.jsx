@@ -220,8 +220,8 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                       <Link href="#">
                         <a>
                           <Image
-                            // width={40}
-                            // height={40}
+                            width={80}
+                            height={80}
                             src={
                               session?.user?.image ||
                               "/images/others/author.webp"
