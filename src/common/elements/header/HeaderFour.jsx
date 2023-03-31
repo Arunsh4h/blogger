@@ -219,6 +219,7 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                     <li>
                       <Link href="#">
                         <a>
+                          {console.log(session?.user?.image)}
                           <Image
                             width={40}
                             height={40}
