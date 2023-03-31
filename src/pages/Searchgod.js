@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Layer from "./Layer";
 
 function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -63,6 +64,7 @@ function SearchPage() {
         </div>
 
         <form onSubmit={handleFormSubmit}>
+          <Layer />
           <div className="gripy">
             <div id="search-bar">
               <div id="dropdown">
