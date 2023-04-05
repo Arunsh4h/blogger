@@ -227,7 +227,7 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
                               "/images/others/author.webp"
                             }
                             alt="Author Images"
-                            priority={true}
+                            unoptimized // Add unoptimized attribute
                           />
                         </a>
                       </Link>
