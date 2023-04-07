@@ -18,7 +18,7 @@ const HomeDefault = ({ allPosts }) => {
 
   return (
     <>
-      <HeadTitle pageTitle="Home Default" />
+      <HeadTitle pageTitle="IntSelf:" />
       <HeaderFour postData={allPosts} />
       <SliderOne postData={allPosts} />
       <PostSectionOne postData={allPosts} />
