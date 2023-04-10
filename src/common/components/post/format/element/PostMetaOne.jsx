@@ -8,8 +8,7 @@ const PostMetaOne = ({ metaData }) => {
   const title = metaData.title;
   const description = metaData.excerpt;
   const image = metaData.featureImg;
-  const currentUrl = window.location.href;
-  const url = `${currentUrl}/post/${slugify(title)}`;
+  const url = `https://example.com/post/${slugify(title)}`;
   const authorName = metaData.author_name;
   const authorImage = metaData.author_img;
   const authorSocial = metaData.author_social.map((social) => ({
