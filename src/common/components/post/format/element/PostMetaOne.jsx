@@ -35,7 +35,7 @@ const PostMetaOne = ({ metaData }) => {
               "@type": "Person",
               "name": "${authorName}",
               "image": "${authorImage}",
-              "sameAs": ${authorSocial}
+              "sameAs": ${JSON.stringify(authorSocial)}
             },
             "datePublished": "${metaData.date}",
             "dateModified": "${metaData.modified_date}"
