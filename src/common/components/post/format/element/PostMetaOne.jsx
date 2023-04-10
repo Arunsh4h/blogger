@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { slugify } from "../../../../utils";
 
-const PostMetaOne = ({ metaData }) => {
+const PostMetaOne = ({ metaData, content }) => {
   return (
     <article
       className="banner banner-single-post post-formate post-standard alignwide"
