@@ -41,7 +41,7 @@ const PostCategory = ({ postData, allPosts }) => {
       </div>
       <InstagramOne parentClass="bg-color-grey" />
       <FooterOne />
-      <style jsx>
+      <style rocket-ajax>
         {`
           /* rocket-ajax container */
           .rocket-ajax-container {
