@@ -8,6 +8,7 @@ import HeaderOne from "../../common/elements/header/HeaderOne";
 import SidebarOne from "../../common/components/sidebar/SidebarOne";
 import { slugify } from "../../common/utils";
 import React, { useState } from "react"; // Import useState hook from React
+import css from "styled-jsx/css";
 
 const PostCategory = ({ postData, allPosts }) => {
   const [numToShow, setNumToShow] = useState(5); // State variable to keep track of number of posts to show
@@ -16,6 +17,36 @@ const PostCategory = ({ postData, allPosts }) => {
     // Function to handle "Load More" button click
     setNumToShow(numToShow + 3); // Update state variable to increase number of posts to show by 3
   };
+  const styles = css`
+    /* rocket-ajax container */
+    .rocket-ajax-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* rocket-ajax */
+    .rocket-ajax {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #007bff;
+      border: 9px solid #c2e2ff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* rocket-ajax hover effect */
+    .rocket-ajax:hover {
+      background-color: #ff6767;
+      border: 9px solid #ffe6c3;
+    }
+  `;
 
   return (
     <>
@@ -41,38 +72,7 @@ const PostCategory = ({ postData, allPosts }) => {
       </div>
       <InstagramOne parentClass="bg-color-grey" />
       <FooterOne />
-      <style rocket-ajax>
-        {`
-          /* rocket-ajax container */
-          .rocket-ajax-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          /* rocket-ajax */
-          .rocket-ajax {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            color: #ffffff;
-            background-color: #007bff;
-            border: 9px solid #c2e2ff;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-          }
-
-          /* rocket-ajax hover effect */
-          .rocket-ajax:hover {
-            background-color: #ff6767;
-            border: 9px solid #ffe6c3;
-          }
-        `}
-      </style>
+      <style jsx>{styles}</style>
     </>
   );
 };
