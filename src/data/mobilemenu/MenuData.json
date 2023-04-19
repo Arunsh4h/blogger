@@ -5,12 +5,12 @@
         
     },
     {
-        "label": "OP-Search",
-        "path": "/post-listy"
+        "label": "Enhanched Search AI",
+        "path": "/search-ai"
        
     },
     {
-        "label": "Catalogue",
+        "label": "Insights",
         "path": "/"
       
     },

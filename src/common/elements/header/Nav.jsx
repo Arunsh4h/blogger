@@ -163,7 +163,7 @@ const Nav = ({ posts }) => {
       </li>
       <li className="menu-item-has-children megamenu-wrapper">
         <Link href="#">
-          <a>Catalogue</a>
+          <a>Insights</a>
         </Link>
         <ul className="megamenu-sub-menu">
           <li className="megamenu-item">
@@ -246,8 +246,8 @@ const Nav = ({ posts }) => {
         </ul>
       </li>
       <li className="menu-item-has-children">
-        <Link href="/post-listy">
-          <a>OP Search</a>
+        <Link href="/search-ai">
+          <a>Enhanched Search AI</a>
         </Link>
         {/* <ul className="axil-submenu"> */}
         {/* <li>
