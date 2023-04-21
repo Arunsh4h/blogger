@@ -249,6 +249,7 @@ const Nav = ({ posts }) => {
         <Link href="/search-ai">
           <a>Enhanched Search AI</a>
         </Link>
+
         {/* <ul className="axil-submenu"> */}
         {/* <li>
             <Link href="/post-listy">
@@ -329,6 +330,12 @@ const Nav = ({ posts }) => {
           <a>Lifestyle</a>
         </Link>
       </li>
+      <li>
+        <Link href="/BudgetingApp">
+          <a>Budget App</a>
+        </Link>
+      </li>
+
       <li>
         <Link href="/seo-blog">
           <a>Gadgets</a>
