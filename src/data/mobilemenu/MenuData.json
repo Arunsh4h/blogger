@@ -19,6 +19,11 @@
         "path": "/lifestyle-blog" 
     },
     {
+        "label": "Budget App",
+        "path": "/BudgetingApp"
+    },
+   
+    {
         "label": "Gadgets",
         "path": "/tech-blog"
     }
