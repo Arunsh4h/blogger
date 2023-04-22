@@ -52,6 +52,28 @@ function BudgetingApp() {
 
   const isBudgetingProperly = budgetPercentageOfIncome >= 50;
 
+  // Insight 14: Determine the percentage of income that goes towards meeting the user's financial goal
+  const goalPercentage = (goal / income) * 100;
+
+  // Insight 14: Determine the total amount of money spent on expenses
+  const totalExpenses = Array.isArray(expenses)
+    ? expenses.reduce((acc, expense) => acc + expense.amount, 0)
+    : 0;
+
+  // Insight 15: Determine the average amount spent on each expense
+  const averageExpenseAmount = totalExpenses / expenses.length;
+
+  // Insight 16: Determine the percentage of the budget that has been used
+  const budgetPercentageUsed = (totalExpenses / budget) * 100;
+
+  // Insight 17: Determine the total amount of money saved
+  const totalSavings = Array.isArray(moneyRange)
+    ? moneyRange.reduce((acc, range) => acc + range.amount, 0)
+    : 0;
+
+  // Insight 18: Determine the average amount saved per month
+  const averageMonthlySavings = totalSavings / moneyRange.length;
+
   const handleIncomeChange = (event) => {
     setIncome(Number(event.target.value));
   };
@@ -172,13 +194,26 @@ function BudgetingApp() {
           >
             <h1
               style={{
-                color: "#484848",
+                color: "#2a2323",
+                textAlign: "center",
               }}
             >
               Budgeting App
             </h1>
           </div>
-          <label style={{ color: "blue" }} htmlFor="income">
+          <label
+            style={{
+              color: "white",
+              border: "3px solid #0083ff",
+              display: "flex",
+              justifyContent: "center",
+              background: "#151456",
+              fontWeight: "bold",
+              borderRadius: "11px",
+              margin: " 4px 0px",
+            }}
+            htmlFor="income"
+          >
             Total Money:
           </label>
           <input
@@ -188,7 +223,19 @@ function BudgetingApp() {
             onChange={handleIncomeChange}
           />
           <br />
-          <label style={{ color: "purple" }} htmlFor="expenses">
+          <label
+            style={{
+              color: "white",
+              border: "3px solid #0083ff",
+              display: "flex",
+              justifyContent: "center",
+              background: "#151456",
+              fontWeight: "bold",
+              borderRadius: "11px",
+              margin: " 4px 0px",
+            }}
+            htmlFor="expenses"
+          >
             Your Expenses:
           </label>
           <input
@@ -198,7 +245,19 @@ function BudgetingApp() {
             onChange={handleExpensesChange}
           />
           <br />
-          <label style={{ color: "red" }} htmlFor="goal">
+          <label
+            style={{
+              color: "white",
+              border: "3px solid #0083ff",
+              display: "flex",
+              justifyContent: "center",
+              background: "#151456",
+              fontWeight: "bold",
+              borderRadius: "11px",
+              margin: " 4px 0px",
+            }}
+            htmlFor="goal"
+          >
             Your Saving Goal:
           </label>
           <input
@@ -208,7 +267,19 @@ function BudgetingApp() {
             onChange={handleGoalChange}
           />
           <br />
-          <label style={{ color: "purple" }} htmlFor="moneyRange">
+          <label
+            style={{
+              color: "white",
+              border: "3px solid #0083ff",
+              display: "flex",
+              justifyContent: "center",
+              background: "#151456",
+              fontWeight: "bold",
+              borderRadius: "11px",
+              margin: " 4px 0px",
+            }}
+            htmlFor="moneyRange"
+          >
             Select Money Range:
           </label>
           <input
@@ -748,6 +819,7 @@ function BudgetingApp() {
             >
               {budgetPercentageOfIncome.toFixed(2)}%
             </td>
+
             <td
               style={{
                 padding: "1.1rem",
@@ -762,6 +834,7 @@ function BudgetingApp() {
             >
               Is Saving Enough:
             </td>
+
             <td
               style={{
                 padding: "1rem",
@@ -773,6 +846,198 @@ function BudgetingApp() {
               }}
             >
               {isSavingEnough ? "Yes" : "No"}
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Percentage of Income towards Financial Goal:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {goalPercentage.toFixed(2)}%
+            </td>
+
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Total Expenses:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {totalExpenses}
+            </td>
+
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Expense Percentage of Income:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {expensePercentage}%
+            </td>
+
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Budget:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {budget}
+            </td>
+
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Budget Percentage Used:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {budgetPercentageUsed}%
+            </td>
+          </tr>
+          <tr>
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Total Savings:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {totalSavings}
+            </td>
+
+            <td
+              style={{
+                padding: "1.1rem",
+                background: "#dae7ff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                color: "#8a2be2",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+                borderRight: "4px solid transparent;",
+              }}
+            >
+              Goal:
+            </td>
+            <td
+              style={{
+                padding: "1rem",
+                background: "#cbecff",
+                fontSize: "14px",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                border: "1px solid #101010",
+              }}
+            >
+              {goal}
             </td>
           </tr>
         </tbody>
