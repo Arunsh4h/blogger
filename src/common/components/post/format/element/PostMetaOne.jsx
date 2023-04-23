@@ -55,13 +55,13 @@ const PostMetaOne = ({ metaData, content }) => {
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     background:
-                      "repeating-linear-gradient(117deg, #070a28, transparent 100px)",
-                    backgroundColor: "#281706",
+                      "repeating-linear-gradient(117deg, rgb(234 236 255), #38a3ff00 100px) rgb(207 231 255)",
                     fontWeight: "bold",
                     textAlign: "center",
+                    color: "black",
                     borderRadius: "23px",
-                    border: "double",
-                    padding: "12px",
+                    border: "9px double",
+                    padding: "7px",
                   }}
                 >
                   {metaData.title}
