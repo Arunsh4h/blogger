@@ -48,11 +48,7 @@ const PostMetaOne = ({ metaData, content }) => {
                     </Link>
                   </div>
                 </div>
-                <h1
-                  style={{ fontFamily: "'Quicksand', sans-serif" }}
-                  className="title"
-                  itemProp="headline"
-                >
+                <h1 className="title" itemProp="headline">
                   {metaData.title}
                 </h1>
                 {/* Post Meta  */}
