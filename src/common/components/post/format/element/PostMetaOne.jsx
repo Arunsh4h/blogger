@@ -53,15 +53,15 @@ const PostMetaOne = ({ metaData, content }) => {
                   className="title"
                   itemProp="headline"
                   style={{
-                    fontFamily: "'Quicksand', sans-serif",
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    color: "white",
-                    fontSize: "4rem",
+                    fontFamily: "Quicksand, sans-serif",
+                    background:
+                      "repeating-linear-gradient(117deg, #070a28, transparent 100px)",
+                    backgroundColor: "#281706",
                     fontWeight: "bold",
-                    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                    textAlign: "center",
+                    borderRadius: "23px",
+                    border: "double",
+                    padding: "12px",
                   }}
                 >
                   {metaData.title}
