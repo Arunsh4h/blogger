@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { slugify } from "../../../../utils";
+import "@fontsource/quicksand";
 
 const PostMetaOne = ({ metaData, content }) => {
   return (
@@ -48,7 +49,11 @@ const PostMetaOne = ({ metaData, content }) => {
                     </Link>
                   </div>
                 </div>
-                <h1 className="title" itemProp="headline">
+                <h1
+                  className="title"
+                  itemProp="headline"
+                  style={{ fontFamily: "'Quicksand', sans-serif" }}
+                >
                   {metaData.title}
                 </h1>
                 {/* Post Meta  */}
