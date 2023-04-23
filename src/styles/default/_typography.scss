@@ -2,6 +2,9 @@
  * Typography
  */
  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
 
  * {
 	box-sizing: border-box;
@@ -51,11 +54,16 @@ hr {
 	margin-bottom: 20px;
 }
 
+
+h5{
+	font-family: 'Yatra One', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5,
+
 h6,
 .h1,
 .h2,
@@ -105,9 +113,8 @@ h6,
 	line-height: 1.25;
 }
 
-h1,
-h2,
-h3,
+
+
 h4,
 h5,
 h6,
@@ -119,6 +126,7 @@ h6,
 .h6 {
 	a {
 		color: inherit;
+		font-family: 'Ysabeau', sans-serif;
 	}
 }
 
