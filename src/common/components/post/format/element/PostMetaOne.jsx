@@ -40,7 +40,13 @@ const PostMetaOne = ({ metaData, content }) => {
                 itemType="http://schema.org/Text"
               >
                 <div className="post-cat">
-                  <div className="post-cat-list">
+                  <div
+                    style={{
+                      boxShadow: "0px 0px 0px 20px rgb(205 229 267)",
+                      fontFamily: "'Josefin Sans', sans-serif",
+                    }}
+                    className="post-cat-list"
+                  >
                     <Link href={`/category/${slugify(metaData.cate)}`}>
                       <a className="hover-flip-item-wrapper">
                         <span className="hover-flip-item" itemProp="about">
