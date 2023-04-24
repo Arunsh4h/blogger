@@ -86,10 +86,7 @@ const SliderOne = ({ postData }) => {
                           </Link>
                         </div>
                       </div>
-                      <h2
-                        style={{ fontFamily: "Quicksand, sans-serif" }}
-                        className="title"
-                      >
+                      <h2 className="title">
                         <Link href={`/post/${data.slug}`}>
                           <a>{data.title}</a>
                         </Link>

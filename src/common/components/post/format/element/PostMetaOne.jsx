@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { slugify } from "../../../../utils";
 import "@fontsource/quicksand";
+import "@fontsource/josefin-sans";
 
 const PostMetaOne = ({ metaData, content }) => {
   return (
@@ -53,7 +54,8 @@ const PostMetaOne = ({ metaData, content }) => {
                   className="title"
                   itemProp="headline"
                   style={{
-                    fontFamily: "Quicksand, sans-serif",
+                    fontFamily: "'Josefin Sans', sans-serif",
+                    boxShadow: "0px 0px 38px 24px #fff",
                     background:
                       "repeating-linear-gradient(117deg, rgb(234 236 255), #38a3ff00 100px) rgb(207 231 255)",
                     fontWeight: "bold",

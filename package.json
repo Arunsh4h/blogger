@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@fontsource/josefin-sans": "^4.5.12",
     "@fontsource/quicksand": "^4.5.12",
     "bootstrap": "^5.2.3",
     "chart.js": "^4.2.1",
