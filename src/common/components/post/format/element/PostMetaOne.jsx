@@ -54,8 +54,9 @@ const PostMetaOne = ({ metaData, content }) => {
                   className="title"
                   itemProp="headline"
                   style={{
+                    fontWeight: "800",
                     fontFamily: "'Josefin Sans', sans-serif",
-                    boxShadow: "0px 0px 38px 24px #fff",
+                    boxShadow: "0px 0px 0px 20px rgb(205 229 267)",
                     background:
                       "repeating-linear-gradient(117deg, rgb(234 236 255), #38a3ff00 100px) rgb(207 231 255)",
                     fontWeight: "bold",
