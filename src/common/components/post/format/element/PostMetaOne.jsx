@@ -44,7 +44,6 @@ const PostMetaOne = ({ metaData, content }) => {
                     <Link href={`/category/${slugify(metaData.cate)}`}>
                       <a
                         style={{
-                          boxShadow: "0px 0px 0px 20px rgb(205 229 267)",
                           fontFamily: "'Josefin Sans', sans-serif",
                         }}
                         className="hover-flip-item-wrapper"
