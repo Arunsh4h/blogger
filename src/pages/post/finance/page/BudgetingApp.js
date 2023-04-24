@@ -285,8 +285,8 @@ function BudgetingApp() {
           <input
             type="range"
             id="moneyRange"
-            min="10000"
-            max="100000"
+            min="100"
+            max="10000000"
             value={moneyRange}
             onChange={handleMoneyRangeChange}
           />
