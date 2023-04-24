@@ -10,8 +10,10 @@ import PostSectionFour from "../common/components/post/PostSectionFour";
 import SocialOne from "../common/components/social/SocialOne";
 import PostSectionFive from "../common/components/post/PostSectionFive";
 import PostSectionSix from "../common/components/post/PostSectionSix";
-import SliderOne from "../common/components/slider/SliderOne";
+
 import HeaderFour from "../common/elements/header/HeaderFour";
+
+import SliderThree from "../common/components/slider/SliderThree";
 
 const HomeDefault = ({ allPosts }) => {
   const videoPost = allPosts.filter((post) => post.postFormat === "video");
@@ -20,7 +22,7 @@ const HomeDefault = ({ allPosts }) => {
     <>
       <HeadTitle pageTitle="IntSelf:" />
       <HeaderFour postData={allPosts} />
-      <SliderOne postData={allPosts} />
+      <SliderThree postData={allPosts} />
       <PostSectionOne postData={allPosts} />
       <PostSectionTwo postData={allPosts} adBanner={true} />
       <CategoryList cateData={allPosts} />

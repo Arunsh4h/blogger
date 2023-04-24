@@ -4,7 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { slugify } from "../../utils";
 
-const SliderTwo = ({ postData }) => {
+const SliderThree = ({ postData }) => {
   const slideSettingsOne = {
     arrows: false,
     speed: 1000,
@@ -129,4 +129,4 @@ const SliderTwo = ({ postData }) => {
   );
 };
 
-export default SliderTwo;
+export default SliderThree;
