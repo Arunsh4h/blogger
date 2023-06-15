@@ -31,11 +31,23 @@ const HeaderThree = ({ darkLogo, lightLogo, postData }) => {
         setTogglaClass(active => !active);
    }
 
+   const GoogleAdSenseScript = () => (
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9608759620712426"
+      crossOrigin="anonymous"
+    ></script>
+  );
+  
+
+  
+
   return (
     <>
       <header className="header axil-header header-style-3  header-light header-sticky">
-        <div className="header-top">
+        <div className="header-top">  < GoogleAdSenseScript/>
           <div className="container">
+          
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-8 col-sm-12">
                 <div className="header-top-bar d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
