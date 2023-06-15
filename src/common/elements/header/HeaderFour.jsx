@@ -43,6 +43,8 @@ const HeaderFour = ({ darkLogo, lightLogo, postData }) => {
     signOut();
   };
 
+  
+
   return (
     <>
       <header className="header axil-header header-style-4 header-light header-sticky">
