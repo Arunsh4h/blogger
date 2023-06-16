@@ -330,11 +330,11 @@ const Nav = ({ posts }) => {
           <a>Lifestyle</a>
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/BudgetingApp">
           <a>Budget App</a>
         </Link>
-      </li>
+      </li> */}
 
       <li>
         <Link href="/seo-blog">
