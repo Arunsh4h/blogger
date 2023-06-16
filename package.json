@@ -13,8 +13,6 @@
     "@fontsource/josefin-sans": "^4.5.12",
     "@fontsource/quicksand": "^4.5.12",
     "bootstrap": "^5.2.3",
-    "chart.js": "^4.2.1",
-    "chartjs-chart-financial": "^0.1.1",
     "framer-motion": "^6.5.1",
     "fs": "^0.0.1-security",
     "get-google-fonts": "^1.2.2",

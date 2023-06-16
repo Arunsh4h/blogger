@@ -9,7 +9,7 @@ import PostLayoutTwo from "../common/components/post/layout/PostLayoutTwo";
 import { SortingByDate } from "../common/utils";
 import HeadTitle from "../common/elements/head/HeadTitle";
 import Searchgod from "./Searchgod";
-import BudgetingApp from "./post/finance/page/BudgetingApp";
+// import BudgetingApp from "./post/finance/page/BudgetingApp";
 
 const PostListPage = ({ allPosts }) => {
   const [blogs] = useState(allPosts);
@@ -72,7 +72,7 @@ const PostListPage = ({ allPosts }) => {
         postData={allPosts}
         pClass="header-light header-sticky header-with-shadow"
       />
-      <BudgetingApp />
+      {/* <BudgetingApp /> */}
       {/* <Searchgod /> */}
       <div className="axil-post-list-area axil-section-gap bg-color-white">
         <div className="container">
